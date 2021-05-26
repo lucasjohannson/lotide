@@ -1,6 +1,6 @@
 // FUNCTION IMPLEMENTATION
 const assertArraysEqual = function(testFunction, expectedValue) {
-  if (eqArrays(testFunction, expectedValue)) {
+  if (testFunction === expectedValue) {
     console.log(`✅✅✅ Assertion Passed: ${testFunction} === ${expectedValue}`);
   } else {
     console.log(`🤬🤬🤬 Assertion Failed: ${testFunction} !== ${expectedValue}`);
