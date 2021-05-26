@@ -30,11 +30,9 @@ function middle(array){
     returnArray.push(array[(Math.ceil(array.length / 2)) - 1]);
     return returnArray;
   }
-
 }
-console.log(middle([1,2,3]));
 
 assertArraysEqual(eqArrays(middle([1,2,3]), [2]), true); // => should PASS
 assertArraysEqual(eqArrays(middle([1,2,3,4]), [2,3]), true); // => should PASS
-assertArraysEqual(eqArrays(middle([1,2]), []), true); // => should PASS
+assertArraysEqual(eqArrays(middle([1,2,3,4,5,6,7,8,9]), [5]), true); // => should PASS
 //assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => should PASS
