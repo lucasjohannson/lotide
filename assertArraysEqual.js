@@ -1,12 +1,11 @@
 // FUNCTION IMPLEMENTATION
-const assertArraysEqual = function(a1, a2) {
-  if (eqArrays(a1, a2)) {
-    console.log(`✅✅✅Assertion Passed: ${a1} === ${a2}`);
+const assertArraysEqual = function(testFunction, expectedValue) {
+  if (eqArrays(testFunction, expectedValue)) {
+    console.log(`✅✅✅ Assertion Passed: ${testFunction} === ${expectedValue}`);
   } else {
-    console.log(`🤬🤬🤬 Assertion Failed: ${a1} !== ${a2}`);
+    console.log(`🤬🤬🤬 Assertion Failed: ${testFunction} !== ${expectedValue}`);
   }
 };
-
 
 function eqArrays(arr1, arr2){
   if(arr1.length !== arr2.length) return false;
