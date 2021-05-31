@@ -33,6 +33,8 @@ const letterPositions = function(sentence) {
   }
   return results;
 };
-console.log(letterPositions("Lighthouse in the house"));
+//console.log(letterPositions("Lighthouse in the house"));
 // console.log(letterPositions("hello").e);
 assertArraysEqual(letterPositions("hello").e, [1]);
+
+module.exports = letterPositions;

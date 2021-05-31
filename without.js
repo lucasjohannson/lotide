@@ -32,3 +32,5 @@ assertArraysEqual(eqArrays(without([1, 2, 3], [1]), [2, 3]), true); // => should
 assertArraysEqual(eqArrays(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]), true); // => should PASS
 assertArraysEqual(eqArrays(without(["1", "2", "3"], ["2"]), ["1", "3"]), true); // => should PASS
 
+module.exports = without;
+
