@@ -1,22 +1,3 @@
-// FUNCTION IMPLEMENTATION
-const assertArraysEqual = function(testFunction, expectedValue) {
-  if (testFunction === expectedValue) {
-    console.log(`✅✅✅ Assertion Passed: ${testFunction} === ${expectedValue}`);
-  } else {
-    console.log(`🤬🤬🤬 Assertion Failed: ${testFunction} !== ${expectedValue}`);
-  }
-};
-
-
-function eqArrays(arr1, arr2){
-  if(arr1.length !== arr2.length) return false;
-  for(let i = 0; i < arr1.length; i ++){
-    if(arr1[i] !== arr2[i]){
-      return false;
-    }
-  }
-  return true;
-}
 
 function middle(array){
   const returnArray = []
@@ -32,7 +13,4 @@ function middle(array){
   }
 }
 
-assertArraysEqual(eqArrays(middle([1,2,3]), [2]), true); // => should PASS
-assertArraysEqual(eqArrays(middle([1,2,3,4]), [2,3]), true); // => should PASS
-assertArraysEqual(eqArrays(middle([1,2,3,4,5,6,7,8,9]), [5]), true); // => should PASS
-//assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => should PASS
+module.exports = middle;
