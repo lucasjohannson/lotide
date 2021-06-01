@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@lucas_johannson/lotide",
   "version": "1.0.0",
   "description": "LHL lotide project",
   "main": "assertArraysEqual.js",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/lucasjohannson/lotide.git"
   },
-  "author": "",
+  "author": "Lucas Johannson <luke@clickspace.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lucasjohannson/lotide/issues"
